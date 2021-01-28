@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Google Home Page</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <ul id="nav-bar">
+        <li><a class="nav-bar-opacity" href="#">Gmail</a></li>
+        <li><a class="nav-bar-opacity" href="#">Images</a></li>
+        <li>
+            <a href="#">
+                <div class="nav-bar-opacity" id="menu-icon"></div>
+            </a>
+        </li>
+        <!--<li>
+            <button id="sign-in"><a href="#" id="sign-in-text">Sign in</a></button>
+        </li>-->
+        <li><a href="#" class="nav-bar-opacity"><i class="fa fa-bell" ></i></a></li>
+
+        <li class="profile-image"><img src="https://lh3.googleusercontent.com/ogw/ADGmqu8fV25d86xUZUqjiUWU7n552zJn1Fe8uedu6krO=s32-c-mo" /></li>
+    </ul>
+
+    <div class="main-content">
+        <div id="logo">
+            <img alt="Google logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        </div>
+        <div id="search-bar">
+            <label>
+            <input name="search" type="text">
+        </label>
+            <a href="#" id="speech-link"><img alt="Speech icon" src="https://lh5.googleusercontent.com/OorCLDb2xlVQ4P2MDNCiwAnpv0K1ZrcDwEwRS3sOfDMrnYTnVPvCh7WtFQMbZ_S9u_jzcSLd8g=s128-h128-e365"></a>
+        </div>
+        <div class="buttons">
+            <button name="Google-Search" style="opacity: 0.5;">Google Search</button>
+            <button name="Feeling-Lucky" style="opacity: 0.5;">I'm Feeling Lucky</button>
+        </div>
+
+        <div class="recenttab">
+            <div class="recenttab-icon">
+                <a href="https://www.hotstar.com/in" target="_blank">
+                    <img src="data:image/jpeg;base64,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"
+                    />
+                    <p class="recenttab-text">hotstar</p>
+                </a>
+            </div>
+            <div class="recenttab-icon">
+                <a href="https://www.whatsapp.com/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7iGqZNxb2wJWcPXp_YgR7M62quJM9eDCYLw&usqp=CAU" />
+                    <p class="recenttab-text">Whatsapp</p>
+                </a>
+            </div>
+            <div class="recenttab-icon">
+                <a href="https://umkc.instructure.com/" target="_blank"><img src="https://online.umkc.edu/wp-content/uploads/2018/03/Canvas-Logo.png">
+                    <p class="recenttab-text">Canvas</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="bottom-nav">
+        <ul class="ul-left">
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <ul class="ul-right">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Settings</a></li>
+
+        </ul>
+    </div>
+</footer>
+
+</html>

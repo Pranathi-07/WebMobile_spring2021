@@ -1,0 +1,49 @@
+.box-grid {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 120px;
+    width: 120px;
+    display: block;
+    margin: 10px 5px;
+}
+
+.first {
+    background-color: #FFE333;
+}
+
+.second {
+    background-color: #FF4933;
+}
+
+.third {
+    background-color: #9DFF33;
+}
+
+.fourth {
+    background-color: #525756;
+}
+
+.fifth {
+    background-color: #33F1FF;
+}
+
+.sixth {
+    background-color: #5933FF;
+}
+
+.seventh {
+    background-color: #CB33FF;
+}
+
+.eight {
+    background-color: #FF33EC;
+}
+
+.ninth {
+    background-color: #FF337A;
+}
