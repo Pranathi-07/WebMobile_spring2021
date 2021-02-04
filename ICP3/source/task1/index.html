@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css" />
+
+    <title>ROCK-PAPER-SCISSORS</title>
+  </head>
+  <body>
+    <h1 class="header">Rock Paper Scissors</h1>
+  <!--Aligning the images and onclick event-->
+    <div class="items">
+        <h2> Click the image to PLAY!!!</h2>
+        <div class="row-one">
+            <img class="item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtfXc_g9lhPcDRel_4tFwwD5IZReIUHWhsGQ&usqp=CAU" onclick="playGame('rock')" />
+        </div>
+        
+        <div class="row-two">
+            <img class="item" src="https://pp.netclipart.com/pp/s/57-579200_danahand-paper-rock-paper-scissors-png.png" onclick="playGame('paper')"/>
+            <img class="item"  src="https://www.pinclipart.com/picdir/middle/536-5360227_scissors-hand-rock-paper-scissors-png-clipart.png" onclick="playGame('scissors')"/>
+
+        </div>
+        
+    </div>
+    <!--displaying final result-->
+    <div id="result">
+        <p id="user-selection"></p>
+        <p id="system-selection"></p>
+        <p id="win"></p>
+    </div>
+
+    <script src="main.js"></script>
+   </body>
+</html>
