@@ -15,13 +15,13 @@ body {
     margin-bottom: 10px;
 }
 
-.col .image {
+.col-sm-6 .image,.col-md-3 .image {
     width: 100%;
     height: 200px;
     border-radius: 30px;
 }
 
-.col{
+.col-sm-6 .image,.col-md-3 {
     text-align: center;
 }
 .profile {
