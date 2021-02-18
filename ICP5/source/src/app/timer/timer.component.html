@@ -1,0 +1,39 @@
+<div class="head-align">
+    <h2> CountDown Timer</h2>
+</div>
+<div class="events-container">
+    <div class="event-form">
+
+        <p *ngIf="showError" class="error">Please select a Date greater than today</p>
+        <div class="form-item">
+            <label for="birthday" class="big-text ">Event Date:</label>
+            <input type="date" id="eventDate" name="eventDate" (change)="initializeCounter()" [(ngModel)]="eventsDateRecord" class="input-date">
+        </div>
+    </div>
+
+
+    <div class="event-container">
+        <h2 class="header">Event Timer</h2>
+        <div class="timer">
+            <div class="days flex-item">
+                <h3 class="big-text">{{eventCountDown[0]}} :</h3>
+                <p class="small-text">Days</p>
+            </div>
+            <div class="hours flex-item">
+                <h3 class="big-text ">{{eventCountDown[1]}} :</h3>
+                <p class="small-text">Hours</p>
+            </div>
+            <div class="minutes flex-item">
+                <h3 class="big-text">{{eventCountDown[2]}} :</h3>
+                <p class="small-text">Minutes</p>
+            </div>
+            <div class="seconds flex-item">
+                <h3 class="big-text">{{eventCountDown[3]}} :</h3>
+                <p class="small-text">Seconds</p>
+            </div>
+        </div>
+        <div class="currentDate">
+            <h3> {{currentDate | date}}</h3>
+        </div>
+    </div>
+</div>
