@@ -1,0 +1,8 @@
+.image {
+    height: 100vh;
+    background-size: cover;
+    width: 100%;
+    /* background-image:url('~images/bg.jpg'); */
+    background-image: url('https://c8.alamy.com/comp/P10CDM/food-background-for-tasty-italian-dishes-with-tomato-various-cooking-ingredients-with-spoon-and-blank-cardboard-clipboard-for-menu-or-recipes-top-vi-P10CDM.jpg');
+    background-position: 10% 50%;
+}

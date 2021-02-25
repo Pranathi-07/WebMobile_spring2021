@@ -1,0 +1,107 @@
+.parent-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.child-container {
+    color: white;
+    text-align: center;
+    position: center;
+}
+
+.desc {
+    font-family: Georgia;
+    font-size: 17px;
+}
+
+.thumbnail {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    min-width: 40%;
+    border-radius: 5px;
+}
+
+.thumbnail-description {
+    min-height: 40px;
+}
+
+.thumbnail:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
+}
+
+.panel-body {
+    height: 55vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.recipe-details,
+.venue-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.venue-details {
+    border: none;
+    justify-content: space-between
+}
+
+.recipe-info,
+.venue-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-details .image {
+    margin-right: 10px;
+    border-radius: 10px;
+    width: 70px;
+    height: 70px;
+}
+
+.ingredients-list {
+    background-image: url("https://st4.depositphotos.com/9012638/22606/i/1600/depositphotos_226062896-stock-photo-cooking-background-spices-olive-oil.jpg");
+    background-size: cover;
+    background-position: 10% 50%;
+}
+
+input {
+    margin: 10px;
+    border: none;
+    background: transparent;
+    padding: 10px;
+    border-bottom: 5px solid #ccc;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1;
+    /* Firefox */
+}
+
+.search-input-group {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* .restImg {
+    size: ;
+} */
+
+.venue-info .address {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
