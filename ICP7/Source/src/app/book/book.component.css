@@ -1,0 +1,27 @@
+h1 {
+    text-align: center;
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    min-width: 300px;
+    overflow: auto;
+}
+
+.isbn-col {
+    flex: 0 0 100px !important;
+    white-space: unset !important;
+}
+
+.button-row {
+    margin: 10px 0;
+}
+
+table {
+    border-style: solid;
+    border-radius: 20px;
+}
