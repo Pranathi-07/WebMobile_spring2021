@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img1"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.example.icp2.MainActivity">
+
+        <EditText
+            android:id="@+id/et_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16sp"
+            android:hint="Name"
+            android:inputType="textCapWords"
+            android:textColor="@color/colorBrick"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16sp"
+            android:hint="Enter your Email"
+            android:inputType="textCapWords"
+            android:textColor="@color/colorBrick"
+            android:textColorHint="@color/black" />
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toppings"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cb_cheese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16sp"
+            android:buttonTint="#708090"
+            android:paddingLeft="24dp"
+            android:text="Cheese"
+            android:textColor="@color/colorBlue"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cb_paneer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16sp"
+            android:buttonTint="#708090"
+            android:paddingLeft="24dp"
+            android:text="Paneer"
+            android:textColor="@color/colorBlue"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cb_mushrooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16sp"
+            android:buttonTint="#708090"
+            android:paddingLeft="24dp"
+            android:text="Mushrooms"
+            android:textColor="@color/colorBlue"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cb_onions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16sp"
+            android:buttonTint="#708090"
+            android:paddingLeft="24dp"
+            android:text="Onions"
+            android:textColor="@color/colorBlue"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cb_peppers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16sp"
+            android:buttonTint="#708090"
+            android:paddingLeft="24dp"
+            android:text="Bell Peppers"
+            android:textColor="@color/colorBlue"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cb_chicken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16sp"
+            android:buttonTint="#708090"
+            android:paddingLeft="24dp"
+            android:text="Chicken"
+            android:textColor="@color/colorBlue"
+            android:textSize="16sp" />
+
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="Quantity"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="8dp"
+                android:onClick="decrement"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/tv_quantity"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="1"
+                android:textColor="@color/colorGreen" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="increment"
+                android:text="+" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_order"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:background="@android:color/holo_green_dark"
+                android:text="Order"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btn_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@android:color/holo_green_dark"
+                android:onClick="submitOrder"
+                android:text="Summary"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
