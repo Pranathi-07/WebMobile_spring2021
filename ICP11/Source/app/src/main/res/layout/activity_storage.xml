@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".StorageActivity">
+
+    <EditText
+        android:id="@+id/et_txtData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Enter the data to be saved here...!!"
+         />
+    <Button
+        android:id="@+id/btn_SaveData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_txtData"
+        android:layout_marginTop="10dp"
+        android:onClick="save"
+        android:background="#a2c4c9"
+        android:text="SAVE DATA"
+        />
+    <Button
+        android:id="@+id/btn_LoadData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_SaveData"
+        android:layout_marginTop="10dp"
+        android:onClick="load"
+        android:background="#a2c4c9"
+        android:text="OPEN"
+        />
+    <TextView
+        android:id="@+id/tv_Data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_LoadData"
+        android:layout_marginTop="10dp"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+</RelativeLayout>

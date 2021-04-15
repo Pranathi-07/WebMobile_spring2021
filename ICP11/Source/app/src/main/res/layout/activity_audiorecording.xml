@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".AudioRecordingActivity">
+
+    <Button
+        android:id="@+id/btn_StartRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="#a2c4c9"
+        android:onClick="startrecord"
+        android:layout_gravity="center"
+        android:text="START RECORD"
+         />
+
+    <Button
+        android:id="@+id/btn_StopRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#a2c4c9"
+        android:layout_below="@+id/btn_StartRecord"
+        android:layout_marginTop="50dp"
+        android:onClick="stopRecord"
+        android:text="STOP RECORD"
+        />
+
+    <Button
+        android:id="@+id/btn_StartPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#a2c4c9"
+        android:layout_below="@+id/btn_StopRecord"
+        android:layout_marginTop="50dp"
+        android:onClick="playRecord"
+        android:layout_gravity="center"
+        android:text="PLAY"
+       />
+
+    <Button
+        android:id="@+id/btn_StopPlay"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:background="#a2c4c9"
+        android:layout_below="@+id/btn_StartPlay"
+        android:layout_marginTop="50dp"
+        android:onClick="stopPlay"
+        android:text="STOP"
+         />
+
+</LinearLayout>
